@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 360471979884467071}
   - component: {fileID: 6781894874486534645}
   - component: {fileID: 3957613564318002208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlocoQuebravel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,10 +69,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 947419845
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1194c008e1dc5074b9e6abfcc64940ce, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e39dc9dd273657045896e3aeaec8c5bb, type: 3}
   m_Color: {r: 1, g: 0.4481132, b: 0.4481132, a: 1}
   m_FlipX: 0
   m_FlipY: 0
