@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8073107598950531660}
-  m_Layer: 0
-  m_Name: Point
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: Point1
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,11 +24,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115914837284885470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.62, y: -0.24279718, z: -0.15395983}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7731699213789809550}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6816738420389572643
 GameObject:
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7731699213789809550}
-  - component: {fileID: 7874611347102587438}
+  - component: {fileID: 3338410538769303095}
   - component: {fileID: 9099019358250705859}
   - component: {fileID: 8617428001945199579}
   - component: {fileID: 3420143112299922217}
@@ -61,12 +61,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3905426331317231080}
   - {fileID: 8073107598950531660}
+  - {fileID: 106075582611958562}
+  - {fileID: 3905426331317231080}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &7874611347102587438
+--- !u!50 &3338410538769303095
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -85,8 +86,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &9099019358250705859
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102,7 +103,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.37
 --- !u!114 &8617428001945199579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,8 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e0b6c811e5e8f42b61da19a005c4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 1
-  pointCheck: {fileID: 8073107598950531660}
+  currentTarget: {fileID: 106075582611958562}
+  point1: {fileID: 8073107598950531660}
+  point2: {fileID: 106075582611958562}
 --- !u!195 &3420143112299922217
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -126,7 +128,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 6816738420389572643}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.35
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
@@ -136,9 +138,39 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1 &7462313580148445253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106075582611958562}
+  m_Layer: 10
+  m_Name: Point2
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &106075582611958562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7462313580148445253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7731699213789809550}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7875223625182013514
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3551792402479675907}
   - component: {fileID: 1125413095805944382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +240,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9fe2d215e1fa9f0418d7499790968e44, type: 3}
   m_Color: {r: 0.8773585, g: 0.46426937, b: 0.45937166, a: 1}
   m_FlipX: 0
@@ -229,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3905426331317231080}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Render
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,5 +281,5 @@ Transform:
   m_Children:
   - {fileID: 3551792402479675907}
   m_Father: {fileID: 7731699213789809550}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2672997312237797268}
   - component: {fileID: 9138038474143113886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 124657684791452781}
   - component: {fileID: 4775189370852051665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

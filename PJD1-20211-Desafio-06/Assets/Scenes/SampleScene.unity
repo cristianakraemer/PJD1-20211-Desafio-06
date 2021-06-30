@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.3
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.1
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -210,9 +210,8 @@ GameObject:
   - component: {fileID: 164765674}
   - component: {fileID: 164765677}
   - component: {fileID: 164765675}
-  - component: {fileID: 164765679}
   - component: {fileID: 164765678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,8 +226,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164765673}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -4.2624063, y: 0.769403, z: 3.4439962}
   m_LocalScale: {x: 2.4056604, y: 0.6613497, z: 0.6613497}
+=======
+  m_LocalPosition: {x: -4.2624063, y: 0.769403, z: 3.4439974}
+  m_LocalScale: {x: 2.4056604, y: 0.66134965, z: 0.66134965}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 1690067490}
   m_RootOrder: 4
@@ -323,22 +327,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
   m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
---- !u!114 &164765679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164765673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 0
-  m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
 --- !u!1001 &369583524
@@ -770,6 +758,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &644651174
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +824,8 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+=======
+>>>>>>> Stashed changes
 --- !u!1 &734570172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,9 +1031,8 @@ GameObject:
   - component: {fileID: 1288148098}
   - component: {fileID: 1288148101}
   - component: {fileID: 1288148099}
-  - component: {fileID: 1288148103}
   - component: {fileID: 1288148102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,8 +1047,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288148097}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -3.772406, y: 0.7694037, z: -3.1460147}
   m_LocalScale: {x: 2.8552318, y: 0.44627094, z: 0.33045623}
+=======
+  m_LocalPosition: {x: -3.772406, y: 0.7694037, z: -3.1460166}
+  m_LocalScale: {x: 2.8552318, y: 0.44627094, z: 0.3304562}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 1690067490}
   m_RootOrder: 0
@@ -1155,22 +1150,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!114 &1288148103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288148097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 0
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!224 &1420666813 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
@@ -1200,9 +1179,8 @@ GameObject:
   - component: {fileID: 1467116035}
   - component: {fileID: 1467116038}
   - component: {fileID: 1467116036}
-  - component: {fileID: 1467116040}
   - component: {fileID: 1467116039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1315,22 +1293,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!114 &1467116040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467116034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 0
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1001 &1476247076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,7 +1379,7 @@ GameObject:
   - component: {fileID: 1499331421}
   - component: {fileID: 1499331420}
   - component: {fileID: 1499331423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1678,9 +1640,8 @@ GameObject:
   - component: {fileID: 1725614837}
   - component: {fileID: 1725614840}
   - component: {fileID: 1725614839}
-  - component: {fileID: 1725614842}
   - component: {fileID: 1725614841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1695,8 +1656,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725614836}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 3.9275937, y: 0.76940346, z: -2.306013}
   m_LocalScale: {x: 2.36659, y: 0.3414299, z: 0.3414299}
+=======
+  m_LocalPosition: {x: 3.9275937, y: 0.76940346, z: -2.306015}
+  m_LocalScale: {x: 2.36659, y: 0.34142986, z: 0.34142986}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 1690067490}
   m_RootOrder: 3
@@ -1791,22 +1757,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
   m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
---- !u!114 &1725614842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725614836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 0
-  m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
 --- !u!4 &1749475161 stripped
@@ -2034,9 +1984,8 @@ GameObject:
   - component: {fileID: 2083966052}
   - component: {fileID: 2083966055}
   - component: {fileID: 2083966053}
-  - component: {fileID: 2083966057}
   - component: {fileID: 2083966056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,6 +1999,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083966051}
+<<<<<<< Updated upstream
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 4.167594, y: 0.7694031, z: 1.9539936}
   m_LocalScale: {x: 3.714034, y: 0.5832586, z: 0.45550177}
@@ -2057,6 +2007,15 @@ Transform:
   m_Father: {fileID: 1690067490}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+=======
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 4.167594, y: 0.7694031, z: 1.953994}
+  m_LocalScale: {x: 3.7140357, y: 0.58325875, z: 0.45550182}
+  m_Children: []
+  m_Father: {fileID: 1690067490}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+>>>>>>> Stashed changes
 --- !u!61 &2083966053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2149,6 +2108,7 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+<<<<<<< Updated upstream
 --- !u!114 &2083966057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2165,6 +2125,8 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &4405364767482665892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2341,6 +2303,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 316265477743638844, guid: 5f1f03ae7e0743d4bb2350ef8c99e7ac,
         type: 3}
+    - target: {fileID: 4775189370852051665, guid: d78a4f064cee4844ab141b595548f4d6,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7163101545649829938, guid: d78a4f064cee4844ab141b595548f4d6,
         type: 3}
       propertyPath: m_LocalRotation.w
