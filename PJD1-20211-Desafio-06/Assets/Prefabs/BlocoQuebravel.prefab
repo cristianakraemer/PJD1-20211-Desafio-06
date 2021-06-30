@@ -12,7 +12,12 @@ GameObject:
   - component: {fileID: 360471979884467071}
   - component: {fileID: 6781894874486534645}
   - component: {fileID: 3957613564318002208}
+<<<<<<< Updated upstream
   m_Layer: 0
+=======
+  - component: {fileID: 2711509601381055363}
+  m_Layer: 8
+>>>>>>> Stashed changes
   m_Name: BlocoQuebravel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,3 +127,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockHealth: 100
+--- !u!114 &2711509601381055363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360471979884467069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

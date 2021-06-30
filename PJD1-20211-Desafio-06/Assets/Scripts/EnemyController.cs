@@ -9,10 +9,18 @@ public class EnemyController : Rigidbody2DBase, IPoolableObject
 
     private NavMeshAgent map;
 
+<<<<<<< Updated upstream
     // Seguir o jogador e campo de visão...
     float SpeedEnemy = 2f;
     float StopDistance = 3f;
     private Transform TargetVision; // Campo de visão.
+=======
+    public EnemyBehaviour behaviour = EnemyBehaviour.Patrol;
+    
+    [Header("Patrulha")]
+    public Transform current;
+    public Transform[] points;
+>>>>>>> Stashed changes
 
     /*/ Patrulha
     public Transform currentTarget; // Pivô, ponto zero.
@@ -28,6 +36,7 @@ public class EnemyController : Rigidbody2DBase, IPoolableObject
     {
         Hp = Random.Range(100, 201);
 
+<<<<<<< Updated upstream
         // Procura o GameObject com a Tag Player, acessando a sua posição.
         TargetVision = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -36,11 +45,43 @@ public class EnemyController : Rigidbody2DBase, IPoolableObject
         map = GetComponent<NavMeshAgent>();
         map.updateRotation = false;
         map.updateUpAxis = false;
+=======
+        // NavMesh e seguir player
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+        player = GameObject.FindGameObjectWithTag("Player");
+>>>>>>> Stashed changes
     }
 
     void Update()
     {
+<<<<<<< Updated upstream
         MoveEnemy();
+=======
+        Seek();
+
+        /* switch (behaviour)
+        {
+            case EnemyBehaviour.None:
+                break;
+            case EnemyBehaviour.Patrol:
+                Patrulha();
+                break;
+            case EnemyBehaviour.Seek:
+                Seek();
+                break;
+        } */  
+    }
+
+    void Patrulha()
+    {
+        if(current == null)
+        {
+            behaviour = EnemyBehaviour.None;
+            return;
+        }
+>>>>>>> Stashed changes
     }
 
     public bool ApplyDamage(int damage)
